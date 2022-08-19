@@ -64,24 +64,53 @@ header ul li {
 header ul li:hover {
     background-color: var(--main-color);
     }
-#search{
-    border: none;
-    height: 20px;
-    border-radius: 5px;
-    padding: 5px;
-    transition: 0.3s;
-}
-label[for="search"] {
-    padding: 5px;
-    border-radius: 10px;
+    input[type="search"]{
+        border: 1px solid;
+        height: 25px;
+        border-radius: 5px;
+        padding: 5px;
+        min-width: 100px;
+        width: 250px;
+    }
+    #get {
+        padding: 5px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--main-color);
+        text-transform: capitalize;
+        transition: 0.3s;
+        border: none;
+        cursor: pointer;
+    }
+    #get:hover {
+    background-color: black;
+    color: white;
+    }
+    label[for="search"] {
+        padding: 5px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: var(--main-color);
+        text-transform: capitalize;
+        transition: 0.3s;
+        display: inline;
+        width: 100px;
+        min-width: fit-content;
 }
 label[for="search"]:hover {
-    background-color: var(--main-color);
+    background-color: black;
+    color: white;
 }
 /* ///////////////////////////////////////////////// */
 main {
     min-height: calc(100vh - 120px);
     padding: 60px 20px;
+}
+.flex {
+    align-self: center; 
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
 }
 main .container {
     display: grid;
